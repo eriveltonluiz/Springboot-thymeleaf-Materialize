@@ -74,6 +74,10 @@ public class Pessoa implements Serializable{
 	@Lob
 	private byte[] curriculo;
 	
+	private String nomeFileCurriculo;
+	
+	private String tipoFileCurriculo;
+	
 	public Long getId() {
 		return id;
 	}
@@ -172,6 +176,22 @@ public class Pessoa implements Serializable{
 	
 	public void setCurriculo(byte[] curriculo) {
 		this.curriculo = curriculo;
+	}
+
+	public String getNomeFileCurriculo() {
+		return nomeFileCurriculo;
+	}
+
+	public void setNomeFileCurriculo(String nomeFileCurriculo) {
+		this.nomeFileCurriculo = nomeFileCurriculo;
+	}
+
+	public String getTipoFileCurriculo() {
+		return tipoFileCurriculo;
+	}
+
+	public void setTipoFileCurriculo(String tipoFileCurriculo) {
+		this.tipoFileCurriculo = tipoFileCurriculo;
 	}
 
 	@Override
